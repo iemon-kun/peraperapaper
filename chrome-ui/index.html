@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>ぺらぺらぺーぱー 翻訳コントローラ</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      padding: 2rem;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .row {
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+
+    label {
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+
+    select {
+      font-size: 1rem;
+      padding: 0.2rem 0.5rem;
+      margin-right: 1rem;
+    }
+
+    button {
+      font-size: 1.2rem;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 6px;
+      background-color: #007acc;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    button.stop {
+      background-color: #cc0033;
+    }
+
+    #log {
+      margin-top: 2rem;
+      background: #ffffff;
+      padding: 1rem;
+      white-space: pre-wrap;
+      height: 250px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🗣 ぺらぺらぺーぱー 翻訳コントローラ</h1>
+
+  <div class="row">
+    <label for="sourceLang">元の言語:</label>
+    <select id="sourceLang">
+      <option value="ja">日本語</option>
+      <option value="en">English</option>
+    </select>
+
+    <label for="targetLang">翻訳先:</label>
+    <select id="targetLang">
+      <option value="ja">日本語</option>
+      <option value="en">English</option>
+    </select>
+  </div>
+
+  <div class="row">
+    <button id="toggleInputBtn">🎙 音声入力開始</button>
+  </div>
+
+  <div id="log">ログがここに表示されます</div>
+
+  <script src="main.js"></script>
+</body>
+</html>
