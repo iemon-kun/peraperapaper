@@ -1,0 +1,35 @@
+# node_modules（依存ファイル）
+node_modules/
+
+# ログファイル
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OSごとの不要ファイル
+.DS_Store
+Thumbs.db
+
+# 環境設定系（VSCodeやJetBrainsなど使ってるなら）
+.vscode/
+.idea/
+
+# Electron一時ファイル
+/dist/
+/out/
+/build/
+
+# ビルドアーティファクト
+*.log
+*.tsbuildinfo
+
+# 一時設定ファイルなど
+.env
+config.json # 秘匿情報が入ってる場合は除外も検討
+
+# bun専用のキャッシュディレクトリ
+.bun/
+
+# bun.lockファイル（npmのpackage-lock.json相当）
+bun.lockb

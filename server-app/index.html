@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ぺらぺらぺーぱー サーバ</title>
+    <style>
+      body { font-family: sans-serif; text-align: center; margin-top: 4rem; }
+      button {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 10px;
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+      }
+      #status {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ぺらぺらぺーぱー サーバ</h1>
+    <button id="powerBtn">起動</button>
+    <div id="status">停止中</div>
+    <div id="settings" style="margin-top:2rem;">
+        <h2>⚙️ 設定</h2>
+        <label>OSCポート番号: <input type="number" id="oscPort" /></label><br />
+        <label>WebSocketポート番号: <input type="number" id="wsPort" /></label><br />
+        <button id="saveBtn">保存</button>
+    </div>      
+    <script src="renderer.js"></script>
+  </body>
+</html>
