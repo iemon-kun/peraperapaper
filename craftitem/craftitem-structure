@@ -1,0 +1,11 @@
+# ペラペラペーパー(β)のアイテム構造
+
+PeraperaPaper: アイテム本体(Item, Scriptable Item, Player Script, Movable Itemコンポーネント)
+┗TextBox: 台紙メッシュ,コライダー
+    ┗InitAjuster: テキスト表示位置調整用空オブジェクト
+        ┗Text: テキスト(Text Viewコンポーネント)
+
+
+# アタッチされているスクリプト
+-- ppp.js: ClusterScript
+-- pppp.js: PlayerScript
